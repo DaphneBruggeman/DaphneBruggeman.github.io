@@ -1,0 +1,8 @@
+#prediction-div{
+    display: none;
+}
+
+#giveWord, #upload{
+    display: none;
+    margin: 5px;
+}

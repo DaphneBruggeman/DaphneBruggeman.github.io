@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script defer src="app.js"></script>
+    <title>Fles of pasje?</title>
+</head>
+<body>
+    <div>
+        <h1>Geef mij een foto van..?</h1>
+        <button id="giveWord" onclick="givePrompt()">Geef een woord</button>
+        <span id="score">Model wordt geladen.</span>
+    </div>
+    
+    <div id="upload">
+        <label for="file">Upload een foto om te controleren.</label>
+        <input type="file" accept="image/*;capture=camera" id="file">
+    </div>
+    
+    <div><img id="output" width="400"/></div>
+    <div id="prediction-div"><p id="prediction"></p></div>
+</body>
+</html>
