@@ -1,0 +1,27 @@
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script defer src="https://unpkg.com/@tensorflow/tfjs-core@2.1.0/dist/tf-core.js"></script>
+    <script defer src="https://unpkg.com/@tensorflow/tfjs-converter@2.1.0/dist/tf-converter.js"></script>
+    
+
+    <script defer src="https://unpkg.com/@tensorflow/tfjs-backend-webgl@2.1.0/dist/tf-backend-webgl.js"></script>
+    <script defer src="https://unpkg.com/@tensorflow-models/handpose@0.0.6/dist/handpose.js"></script>
+    <script defer src="./src/knear.js"></script>
+    <script defer src="./src/index.js"></script>
+
+</head>
+
+<body>
+    <h1>Handposes met landmarks points</h1>
+    <h2>Je ziet er geweldig uit!</h2>
+    <div id="container">
+        <canvas id="output" ></canvas>
+        <video id="video" playsinline ></video>
+    </div>
+    <h3>Rock, Paper or Scissors?⬇️</h3>
+    <div id="begin"></div>
+    <button type="button" onclick="ready()" id="button-start" >Start</button>
+</body>
